@@ -15,7 +15,8 @@ pr:
       - environment_setup/arm-templates/*
 
 pool:
-  vmImage: "ubuntu-latest"
+name:MyAgentPool
+demands: Limit -equals DisAbleParallel
 
 variables:
   - group: devopsforai-aml-vg
