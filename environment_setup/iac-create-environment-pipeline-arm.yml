@@ -15,8 +15,8 @@ pr:
       - environment_setup/arm-templates/*
 
 pool:
-name:MyAgentPool
-demands: Limit -equals DisAbleParallel
+  name: MyAgentPool
+  demands: Limit -equals DisAbleParallel
 
 variables:
   - group: devopsforai-aml-vg
